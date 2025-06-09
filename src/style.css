@@ -47,6 +47,9 @@ label {
     color: #fff;
     margin: 20px auto 0;
 }
+.answer {
+    text-align: left;
+}
 a {
     color: #58751A;
     font-weight: 600;
