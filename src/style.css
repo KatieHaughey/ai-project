@@ -38,17 +38,24 @@ label {
     width: 80%;
     margin: auto;
 }
-.submit {
+button.submit {
     padding: 15px;
     width: 40%;
     border-radius: 30px;
     border: none;
-    background-color: #58751A;
+    background-color: #5c7329;
     color: #fff;
     margin: 20px auto 0;
+    transition: 0.25s;
+}
+button.submit:hover {
+    background-color: #6d9020
 }
 .answer {
     text-align: left;
+}
+.hidden {
+    display: none;
 }
 a {
     color: #58751A;

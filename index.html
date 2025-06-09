@@ -19,11 +19,10 @@
         <main>
             <form id="question-form">
                 <label for="question">Ask me a question about WCAG 2.2 AA Guidelines 😊</label>
-                <input type="text" id="question" autocomplete="off" class="question" autofocus required/>
-                <input type="submit" value="Submit" class="submit" />
+                <input type="text" name="question" id="question" class="question" autocomplete="off" autofocus required aria-required="true"/>
+                <button type="submit"class="submit">Submit</button>
             </form>
-            <div class="answer" id="answer">
-            </div>
+            <div class="answer hidden" id="answer"></div>
         </main>
         <footer>This AI project was coded by Katie Haughey and is <a href="https://github.com/KatieHaughey/ai-project" target="_blank">open-sourced on GitHub</a> and is hosted on Netlify</footer>
     </div>
