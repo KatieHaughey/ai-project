@@ -1,0 +1,57 @@
+:root {
+    --font: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+    margin: 100px auto;
+    max-width: 600px;
+}
+body {
+    background-color: #F8F9FA;
+    font-family: var(--font);
+    text-align: center;
+    font-size: 18px;
+}
+h1 {
+     font-weight: 600;
+     font-size: 36px;
+     line-height: 1.5;
+     color: #58751A;
+}
+form {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    box-shadow: 0 12px 14px -8px grey;
+}
+label {
+    margin-bottom: 20px;
+}
+.prompt {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #58751A;
+    border-radius: 30px;
+    width: 80%;
+    margin: auto;
+}
+.submit {
+    padding: 15px;
+    width: 40%;
+    border-radius: 30px;
+    border: none;
+    background-color: #58751A;
+    color: #fff;
+    margin: 20px auto 0;
+}
+a {
+    color: #58751A;
+    font-weight: 600;
+}
+footer {
+    margin-top: 40px;
+    font-size: 16px;
+}
