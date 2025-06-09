@@ -3,7 +3,7 @@ function displayAnswer(response) {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
-    cusrser: "",
+    curser: "",
     });
 }
 
