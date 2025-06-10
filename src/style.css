@@ -15,8 +15,8 @@ body {
 h1 {
      font-weight: 600;
      font-size: 36px;
-     line-height: 1.5;
      color: #58751A;
+     margin-top: 0;
 }
 form {
     padding: 30px;
@@ -37,6 +37,13 @@ label {
     border-radius: 30px;
     width: 80%;
     margin: auto;
+    font-size: 18px;
+}
+.example {
+    font-size: 16px;
+    color: grey;
+    margin-top: 10px;
+    font-style: italic;
 }
 button.submit {
     padding: 15px;
@@ -53,13 +60,27 @@ button.submit:hover {
 }
 .answer {
     text-align: left;
+    font-size: 18px;
+    background-color: #fff;
+    padding: 30px;
+    border-left: 2px solid #5c7429;
+        box-shadow: 0 12px 14px -8px grey;
+}
+.Typewriter__cursor {
+    display: none;
 }
 .hidden {
     display: none;
 }
+p {
+    font-size: 18px;
+}
 a {
     color: #58751A;
     font-weight: 600;
+}
+li {
+    margin-bottom: 10px;
 }
 footer {
     margin-top: 40px;
