@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>WCAGBot</title>
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>WCAGBot 🤖</h1>
-        </header>
-        <main>
-            <form id="question-form">
-                <label for="question">Ask me question about website accessibility 👩🏻‍💻</label>
-                <input type="text" name="question" id="question" class="question" autocomplete="off" autofocus required aria-required="true"/>
-                <div class="example">i.e. How do you add good alt text?</div>
-                <button type="submit"class="submit">Submit</button>
-            </form>
-            <div class="answer hidden" id="answer"></div>
-        </main>
-        <footer>This AI project was coded by <strong>Katie Haughey</strong> and is <a href="https://github.com/KatieHaughey/ai-project" target="_blank">open-sourced on GitHub</a></footer>
+      <header>
+        <h1>WCAGBot 🤖</h1>
+      </header>
+      <main>
+        <form id="question-form">
+          <label for="question"
+            >Ask me question about website accessibility 👩🏻‍💻</label
+          >
+          <input
+            type="text"
+            name="question"
+            id="question"
+            class="question"
+            autocomplete="off"
+            autofocus
+            required
+            aria-required="true"
+          />
+          <div class="example">i.e. How do you add good alt text?</div>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+        <div id="answer" class="hidden">
+          <span id="answer-text"></span>
+          <span
+            id="answer-spinner"
+            class="spinner-border spinner-border-sm text-primary ms-2"
+            role="status"
+          >
+            <span class="visually-hidden">Loading...</span>
+          </span>
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by <strong>Katie Haughey</strong> and is
+        <a href="https://github.com/KatieHaughey/ai-project" target="_blank"
+          >open-sourced on GitHub</a
+        >
+      </footer>
     </div>
     <script src="src/index.js"></script>
-</body>
+  </body>
 </html>
